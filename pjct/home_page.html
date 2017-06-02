@@ -1,0 +1,137 @@
+<html>
+<head>
+<link type="text/css" href="../pjct\s.css" rel="stylesheet" />
+<link type="text/css" href="../pjct\card.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../New Folder\all.css"/>
+    <link rel="stylesheet" type="text/css" href="../New Folder\timeline.css"/>
+       <link rel="stylesheet" type="text/css" href="../New Folder\normalize.css"/>
+<style>
+.myButton {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.mySlides {display:none;}
+</style>
+<link rel="stylesheet" href="feed_scroll.css" type="text/css">
+</head>
+<body>
+<div id="main">
+<img src="../pjct/img\mitcoe.jpg" width="150px" height="170px"></img>
+<img src="../pjct/img\logo.png"  position="absolute" left="160px" top="20px" width="240px" height="60px"></img>
+
+
+<div id="b2">
+<p>
+<!--<img src="../pjct/img\job-seeker.jpg" top="0px" right="100px" height="70px" position="absolute">
+</img>-->
+<a href="../pjct\signin.html" class="myButton">Sign-in/Register</a></div>
+<div id="horizontal">
+     <ul>
+         <li><a href="../pjct\Home_page.html">Home</a></li>
+         <li><a href="../pjct\a.php">Companies</a></li>
+         <li><a href="../pjct\contact.html">Contact</a></li>
+         <li><a href="../pjct/about_us.html">About Us</a></li>
+     </ul>
+</div>
+</div>
+</br>
+<!--Slideshow-->
+<div class="slides" style="max-height:100px;">
+
+<img class="mySlides" src="../pjct/img\P1.jpg" style="width:100%" height:"400px">
+<img class="mySlides" src="../pjct/img\P2.jpg" style="width:100%" height:"400px">
+
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2500);
+}
+</script>
+<div id="mainbox">
+<div id="card">
+  <header>
+  <h1>RESOURCES</h1></header>
+  <ul>
+<li><a href="https://www.mindtools.com/pages/article/Body_Language.htm">OUR MAJOR RECRUITERS</a><br></li>
+<li><a href="https://www.kent.ac.uk/careers/cv.htm">HOW TO MAKE CV</a><br></li>
+<li><a href="http://au.hudson.com/job-seekers/helpful-tips-career-advice/interview-preparation/interview-tips">INTERVIEW TIPS</a><br></li>
+<li><a href="http://www.indiabix.com/interview/">CAMPUS INTERVIEW QUESTIONS</a><br></li>
+<li><a href="http://www.jobsital.com/2013/08/dress-code-for-interview-in-india.html">FORMAL DRESS FOR INTERVIEW</a><br></li>
+
+<li><a href="<li><a href="http://www.indiabix.com/interview/">OFF CAMPUS PLACEMENT</a><br></li>
+</ul>
+</div>
+<div id="card">
+  
+  <h1> INTERVIEWS</h1>
+   <ul>
+<li><a href="https://www.mindtools.com/pages/article/Body_Language.htm">ALL ABOUT BODY LANGUAGE</a><br></li>
+<li><a href="http://www.artofliving.org/in-en/personality-development">PERSONALITY DEVELOPMENT</a><br></li>
+<li><a href="https://www.coursera.org/learn/negotiation-skills">ALL ABOUT NEGOTIATIONS</a><br></li>
+<li><a href="http://www.indiabix.com/hr-interview/questions-and-answers/">INTERVIEW QUESTIONS</a><br></li>
+
+</ul></div>
+<div id="card">
+  
+  <h1>News</h1>
+   <ul>
+<li><a href="http://mitcoe.ac.in/our-placement-records/">PLACEMENT RECORD</a><br></li>
+
+<li><a href="http://mitcoe.ac.in/our-placement-records/">INDUSTRY INTERACTION</a><br></li>
+
+<li><a href="http://www.ndtv.com/topic/campus-placement/news">PLACEMENT UPDATES</a><br></li>
+
+
+
+</ul></div></div>
+</body>
+</html>

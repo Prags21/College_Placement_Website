@@ -1,0 +1,78 @@
+<!Doctype html>
+<html>
+<head>
+<title>Signin</title>
+        <link rel="stylesheet" type="text/css" href="../pjct\signin.css"/>
+<style>
+body {
+    background-image: url("../pjct/img\wp.jpg");
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="card1">
+  <h2>Sign-in </h2><form method="post" action="signin.php" autocomplete="off" >
+     
+  <input type="email" name="email_id" placeholder="Mail.." />
+  <input type="password" name="password" placeholder="Password.."/>
+
+  <!--  // // // // // // // // // //  -->
+  <input type="submit" value="Sign-in" onclick="p(this.form)"/>
+ 
+</div>
+</form>
+<script language="javascript">
+    function p(form){
+if(form.email_id.value=="")
+{
+alert("enter E-mail")
+}
+else{
+if(form.password.value=="")
+{
+alert("enter Password!")
+}
+else{
+alert("logged in!")
+}
+}
+</script>
+
+
+
+
+
+<div id="card3">
+<img src="../pjct/img\or.png" width="100px" height="100px"></img>
+</div>
+<div id="card2">
+  <h2>Sign-up  </h2><form action="signup.php" method="post">
+  <input type="email" name="email_id" placeholder="Mail.." />
+  <input type="text"  name="name" placeholder="Name.."/>
+  <input type="password" name="password"  placeholder="Password.." />
+
+  <input type="checkbox" id="news" name="news">
+  <label for="news">Subscribe to our newsltetter !</label>
+
+  <!--  // // // // // // // // // //  -->
+  <input type="submit" value="Signup" onclick="Logon(this.form)"/>
+</div></form>
+ <script language="javascript">
+function Logon(form){
+if(form.email_id.value=="" || form.password.value=="" || form.name.value=="")
+{
+alert("enter all Details")
+}
+else
+{
+alert("successfully created account!")
+alert("Sign-in now!")
+}
+}
+</script>
+
+</body>
+</html>

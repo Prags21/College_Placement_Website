@@ -1,0 +1,20 @@
+#div2{
+				width:100%;
+				height:15%;
+				left:0px;
+				
+				position:absolute;
+				font-family:calibri;
+				
+				color:Blue;
+			 }	
+
+
+#div1{
+				
+				align:center;
+				position:absolute;
+				font-family:calibri;
+				background-color:#c982ee;
+				color:white;
+			 }	

@@ -1,0 +1,33 @@
+#mainbox{
+  font-family: calibri;
+  box-sizing: border-box;
+ position:absolute;
+top:650px;
+  display: flex;
+flex-wrap: wrap;
+left:60px;
+}
+
+#card{
+width: 350px;
+border: 1px solid gray;
+box-shadow: 1px 1px 3px #888;
+border-top: 10px solid green;
+min-height: 250px;
+padding-: 10px;
+margin: 20px;
+}
+
+
+h1{
+  font-weight: lighter;
+  margin-left: 100px;
+  margin-top: -45px;
+}
+
+li{
+  margin: 10px;
+  font-family: segoe ui;
+  line-height: 1.4em;
+  font-size: 1.2em;
+}

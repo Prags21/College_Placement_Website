@@ -1,0 +1,197 @@
+<html>
+<head>
+<style>
+html{
+    background: url('file:///F:/xampp/htdocs/pjct/img/wood.jpg');
+  background-size:cover;
+    background-repeat: no-repeat;
+}
+form{
+    max-width: 800px;
+    background:transparent;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #305A72;
+}
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 65px;
+  padding: 60px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+ 
+  
+     color: #305A72;
+    background-color: #e7e5e4;
+    letter-spacing: .1em;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+  
+  
+}
+
+</style>
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta charset=utf-8 />
+<title>Registration</title>
+</head>
+
+<body>
+
+<h1> REGISTRATION FORM</h1>
+<form action="form.php" method="post">
+<table align="CENTER">
+
+<tr>
+<td><b>Name :</b></td>
+<td><input type="text" name="name"></td>
+<input type="file" onchange="readURL(this)" name="life" />
+<img id="blah" src="#" alt="my pic"/>
+<script language="javascript">
+ function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(150)
+                        .height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+</script>
+</td>
+</tr>
+
+<tr>
+<td><b>Class :</b></td>
+<td><input type="text" name="class" / ></td>
+</tr>
+<tr>
+<td><b>Roll no :</b></td>
+<td><input type="number" name="roll" / ></td>
+</tr>
+
+
+<tr>
+<td><b>Date :</b></td>
+<td><input type="date" name="da" / ></td>
+</tr>
+
+
+
+<tr>
+<td><b>Gender:</b></td>
+<td><input type="radio" name="gender" />Male<br>
+<input type="radio" name="gender" />Female<br>
+</td>
+</tr>
+
+
+<tr>
+<td><b>College name :</b></td>
+<td><input type="text" name="collname" / ></td>
+</tr>
+
+<tr>
+<td><b>Father's name :</b></td>
+<td><input type="text" name="f-name" / ></td>
+</tr>
+
+<tr>
+<td><b>Fathers occupation :</b></td>
+<td><input type="text" name="f-occ" / ></td>
+</tr>
+
+<tr>
+<td><b>Mothers name :</b></td>
+<td><input type="text" name="m-name" / ></td>
+</tr>
+
+<tr>
+<td><b>Mothers occupation :</b></td>
+<td><input type="text" name="m-occ" / ></td>
+</tr>
+<tr>
+<td><b>Address :</b></td>
+<td><textarea rows="4" cols="15" name="address" >Enter your address...</textarea></td>
+</tr>
+
+
+<tr>
+<td ><b>Email ID:</b></td>
+<td><input type="email" name="em" /></td>
+</tr>
+
+<tr>
+<td><b>Contact Number:</b></td>
+<td><input type="number" name="con" /></td>
+</tr>
+
+<tr>
+<th>10th Marks Sheet(select a file)</th><th><input type="file" name="pica"><br></th>
+</tr>
+<tr>
+<th>12th Marks Sheet(select a file)</th><th><input type="file" name="picb"><br></th>
+</tr>
+<tr><th>B.E. Marks Sheet(select a file)</th>
+<th>F.E.<input type="file" name="picc"></th>
+<th>S.E.<input type="file" name="picd"></th>
+<th>T.E.<input type="file" name="pice"><br></th>
+</tr>
+<tr>
+<th>Resume(select a file)</th><th><input type="file" name="picf"><br></th>
+</tr>
+<tr>
+<th>Co-curricular activities(select a file)</th><th><input type="file" name="picg" multiple><br></th>
+</tr> 
+<tr><th>passport</th><th>
+<input type="radio" name="Passport">Yes
+<input type="radio" name="Passport">No
+</th></tr><br>
+<tr><th>Want to go for higher education</th><th>
+<input type="radio" name="HigherEducation">Yes
+<input type="radio" name="HigherEducation">No
+
+</th></tr>
+<tr><th>
+<td align="right"><input type="submit" value="Submit" onclick="sub(this.form)"/></td>
+</th><th>
+<input type="reset"></th></tr>
+</table>
+</form>
+
+<script language="javascript">
+function sub(form){
+alert("registration is complete!!thanks")
+
+}
+
+</script>
+</body>
+</html>

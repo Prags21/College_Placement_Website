@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+<title>Admin_Signin</title>
+       <link rel="stylesheet" type="text/css" href="C:\Users\hp-pc\Desktop\pjct\signin.css"/>
+</head>
+<body>
+<div id="card">
+  <h2>Sign-in  </h2><form name="login">
+  <input type="text" name="userid" placeholder="Mail.." />
+  <input type="text" name="password" placeholder="Password.."/>
+
+  <!--  // // // // // // // // // //  -->
+  <input type="submit" value="Sign-in" onclick="check(this.form)"/>
+  <input type="submit" id="submit" name="submit" value=" Facebook"/>
+  <input type="submit" id="submit" name="submit" value=" Google"/>
+</div>
+</form>
+ <script language="javascript">
+function check(form){
+if(form.userid.value=="Prags" && form.password.value=="p34")
+{
+window.open('Admin_page.html')
+}
+else
+{
+alert("Error Password or userid")
+}
+}
+</script>
+</body>
+</html>
